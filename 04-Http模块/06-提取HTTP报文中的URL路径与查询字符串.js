@@ -3,6 +3,15 @@ const http = require('http')
 
 //创建服务  形参：request -- 请求信息 ；response -- 响应信息
 const server = http.createServer((request, response) => {
+  // 通过实例化URL对象，来获取 形参：网站地址 网站ip(可以是随意ip)
+  let url = new URL(request.url, 'http://127.0.0.1')
+  // console.log(url)
+
+  // 输出路径
+  console.log(url.pathname)
+
+  // 输出属性的值
+  console.log(url.searchParams.get('a'))
 
 
   // 响应结束
