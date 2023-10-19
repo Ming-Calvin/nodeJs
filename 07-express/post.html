@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <script>
+    // 1. 创建xhr
+    const xhr = new XMLHttpRequest()
+    
+    // 2. 初始化
+    xhr.open('POST', 'http://127.0.0.1:3000/login')
+  
+    // 3. 发送请求
+    xhr.send('a=123&b=abc')
+    
+    // 4. 事件绑定
+    xhr.onreadystatechange = function () {
+      if(xhr.readyState === 4) {
+        if(xhr.status >= 200 && xhr.status <= 300) {
+          console.log(123)
+        }
+      }
+    }
+  
+  </script>
+
+</body>
+</html>
