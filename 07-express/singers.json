@@ -1,102 +1,104 @@
-[
-  {
-    "id": 1,
-    "name": "Singer 1",
-    "pic": "https://example.com/singer1.jpg"
-  },
-  {
-    "id": 2,
-    "name": "Singer 2",
-    "pic": "https://example.com/singer2.jpg"
-  },
-  {
-    "id": 3,
-    "name": "Singer 3",
-    "pic": "https://example.com/singer3.jpg"
-  },
-  {
-    "id": 4,
-    "name": "Singer 4",
-    "pic": "https://example.com/singer4.jpg"
-  },
-  {
-    "id": 5,
-    "name": "Singer 5",
-    "pic": "https://example.com/singer5.jpg"
-  },
-  {
-    "id": 6,
-    "name": "Singer 6",
-    "pic": "https://example.com/singer6.jpg"
-  },
-  {
-    "id": 7,
-    "name": "Singer 7",
-    "pic": "https://example.com/singer7.jpg"
-  },
-  {
-    "id": 8,
-    "name": "Singer 8",
-    "pic": "https://example.com/singer8.jpg"
-  },
-  {
-    "id": 9,
-    "name": "Singer 9",
-    "pic": "https://example.com/singer9.jpg"
-  },
-  {
-    "id": 10,
-    "name": "Singer 10",
-    "pic": "https://example.com/singer10.jpg"
-  },
-  {
-    "id": 11,
-    "name": "Singer 11",
-    "pic": "https://example.com/singer11.jpg"
-  },
-  {
-    "id": 12,
-    "name": "Singer 12",
-    "pic": "https://example.com/singer12.jpg"
-  },
-  {
-    "id": 13,
-    "name": "Singer 13",
-    "pic": "https://example.com/singer13.jpg"
-  },
-  {
-    "id": 14,
-    "name": "Singer 14",
-    "pic": "https://example.com/singer14.jpg"
-  },
-  {
-    "id": 15,
-    "name": "Singer 15",
-    "pic": "https://example.com/singer15.jpg"
-  },
-  {
-    "id": 16,
-    "name": "Singer 16",
-    "pic": "https://example.com/singer16.jpg"
-  },
-  {
-    "id": 17,
-    "name": "Singer 17",
-    "pic": "https://example.com/singer17.jpg"
-  },
-  {
-    "id": 18,
-    "name": "Singer 18",
-    "pic": "https://example.com/singer18.jpg"
-  },
-  {
-    "id": 19,
-    "name": "Singer 19",
-    "pic": "https://example.com/singer19.jpg"
-  },
-  {
-    "id": 20,
-    "name": "Singer 20",
-    "pic": "https://example.com/singer20.jpg"
-  }
-]
+{
+  "singers": [
+    {
+      "id": 1,
+      "name": "Singer 1",
+      "pic": "https://example.com/singer1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Singer 2",
+      "pic": "https://example.com/singer2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Singer 3",
+      "pic": "https://example.com/singer3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Singer 4",
+      "pic": "https://example.com/singer4.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Singer 5",
+      "pic": "https://example.com/singer5.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Singer 6",
+      "pic": "https://example.com/singer6.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Singer 7",
+      "pic": "https://example.com/singer7.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Singer 8",
+      "pic": "https://example.com/singer8.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Singer 9",
+      "pic": "https://example.com/singer9.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Singer 10",
+      "pic": "https://example.com/singer10.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Singer 11",
+      "pic": "https://example.com/singer11.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Singer 12",
+      "pic": "https://example.com/singer12.jpg"
+    },
+    {
+      "id": 13,
+      "name": "Singer 13",
+      "pic": "https://example.com/singer13.jpg"
+    },
+    {
+      "id": 14,
+      "name": "Singer 14",
+      "pic": "https://example.com/singer14.jpg"
+    },
+    {
+      "id": 15,
+      "name": "Singer 15",
+      "pic": "https://example.com/singer15.jpg"
+    },
+    {
+      "id": 16,
+      "name": "Singer 16",
+      "pic": "https://example.com/singer16.jpg"
+    },
+    {
+      "id": 17,
+      "name": "Singer 17",
+      "pic": "https://example.com/singer17.jpg"
+    },
+    {
+      "id": 18,
+      "name": "Singer 18",
+      "pic": "https://example.com/singer18.jpg"
+    },
+    {
+      "id": 19,
+      "name": "Singer 19",
+      "pic": "https://example.com/singer19.jpg"
+    },
+    {
+      "id": 20,
+      "name": "Singer 20",
+      "pic": "https://example.com/singer20.jpg"
+    }
+  ]
+}
