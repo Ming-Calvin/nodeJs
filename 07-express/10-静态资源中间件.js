@@ -5,11 +5,11 @@ const express = require('express')
 const app = express()
 
 // 静态资源中间件设置
-app.use(express.static(__dirname + '/public'))
+app.use(express.static(__dirname + '/public'))  // 默认调用文件夹中的index文件
 
-
+// 当请求符合两个路由时，按照先后的执行顺序，返回先执行的，此时会返回 静态资源中间件
 // 创建路由
-app.get('/home', (request, response) => {
+app.get('/', (request, response) => {
   response.end('hello express')
 })
 
