@@ -17,7 +17,7 @@ const cn = function () {
 // exports.cn = cn
 
 // 3. 注意
-// a. moudle.exports 可以暴露任何数据
+// a. module.exports 可以暴露任何数据
 // module.exports = 'abc'
 
 // 不能使用 exports = 'value' 的方式暴露数据
