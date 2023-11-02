@@ -1,0 +1,28 @@
+{
+  "account": [
+    {
+      "id": "-pW7JU1QV",
+      "item": "打赏完颜慧德",
+      "time": "2023-11-02",
+      "type": "-1",
+      "account": "10000000",
+      "remark": "打赏完颜慧德"
+    },
+    {
+      "id": "zFtydMBcw",
+      "item": "倒贴",
+      "time": "2023-11-02",
+      "type": "-1",
+      "account": "10000",
+      "remark": "倒贴男人"
+    },
+    {
+      "id": "BG0WM3u2T",
+      "item": "站街",
+      "time": "2023-11-02",
+      "type": "1",
+      "account": "1000",
+      "remark": "站街所得"
+    }
+  ]
+}

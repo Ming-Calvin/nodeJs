@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/list.css">
+</head>
+<body>
+    <div class="container">
+        <h1> Balance Book </h1>
+        <hr>
+        <ul class="list">
+            <% list.forEach(item => { %>
+                <li class="item <%= item.type === '-1' ? "li-warning" : "li-success" %>">
+                    <div class="element" >
+                        <div class="time <%= item.type === '-1' ? "tag-warning" : "tag-success" %>">
+                            <%= item.time %>
+                        </div>
+                        <div class="content">
+                            <div class="description"> <%= item.item %> </div>
+                            <div class="tag <%= item.type === '-1' ? "tag-warning" : "tag-success" %>">
+                                <%= item.type === '-1' ? "支出" : "收入" %>
+                            </div>
+                            <div class="account"> <%= item.account %> </div>
+                            <div class="button">
+                                <a href="/account/delete/<%= item.id %>"> x </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            <% }) %>
+        </ul>
+    </div>
+</body>
+</html>

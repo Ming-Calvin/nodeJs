@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/create.css">
+</head>
+<body>
+    <div class="container">
+        <h1> Add Balance </h1>
+        <hr>
+
+        <form method="post" action="/account">
+            <div class="mb-3">
+                <label for="item" class="form-label"> 事项 </label>
+                <input type="text" name="item" class="form-control" id="task">
+            </div>
+
+            <div class="mb-3">
+                <label for="time" class="form-label"> 发生时间 </label>
+                <input type="text" name="time" class="form-control" id="create">
+            </div>
+
+            <div class="mb-3">
+                <label for="type" class="form-label"> 类型 </label>
+                <select class="form-select" name="type" aria-label="category">
+                    <option value="-1" selected> 支出 </option>
+                    <option value="1">收入</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="account" class="form-label"> 金额 </label>
+                <input  type="number" name="account" class="form-control" id="amount">
+            </div>
+
+            <div class="mb-3">
+                <label for="remark" class="form-label"> 备注 </label>
+                <textarea class="form-control" name="remark" id="notes"></textarea>
+            </div>
+
+            <hr>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;"> 提交 </button>
+        </form>
+    </div>
+
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-3.7.1.min.js"></script>
+</body>
+</html>
