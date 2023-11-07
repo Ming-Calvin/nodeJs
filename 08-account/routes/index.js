@@ -13,31 +13,31 @@ const shortid = require('shortid')
 const db = low(adapter)
 
 /* GET home page. */
-router.get('/account', function(req, res, next) {
-  let list = db.get('account').value()
+router.get('/08-account', function(req, res, next) {
+  let list = db.get('08-account').value()
 
   res.render('list', { list });
 });
 
-router.get('/account/create', (req, res) => {
+router.get('/08-account/create', (req, res) => {
 
   res.render('create')
 })
 
-router.post('/account', (req, res) => {
+router.post('/08-account', (req, res) => {
   // 生成id
   let id = shortid.generate()
 
-  db.get('account').unshift({ id, ...req.body }).write()
+  db.get('08-account').unshift({ id, ...req.body }).write()
 
   res.render('success', { msg: 'add success!!!', url: '/account' })
 })
 
-router.get('/account/delete/:id', (req, res) => {
+router.get('/08-account/delete/:id', (req, res) => {
   // 获取id
   let id = req.params.id
 
-  db.get('account').remove({ id }).value()
+  db.get('08-account').remove({ id }).value()
 
   res.render('success', { msg: 'delete success!!!', url: '/account' })
 })
