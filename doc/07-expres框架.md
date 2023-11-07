@@ -289,32 +289,31 @@ app.get('/', (req, res) => {
 
 ### 7.1 form表单
 
-```
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Title</title>
-</head>
-<body>
-  <!--
-  action: 服务器上的url
-  methods: 提交方法
-  enctype: encoding type 编码方式 默认：application/x-www-form-urlencoded 上传文件：multipart/form-data
-  target: 响应显示的位置
-  novalidate: 不进行验证
-  -->
-  <form action="/login" method="post" enctype="application/x-www-form-urlencoded">
+- action: 服务器上的url
+
+- methods: 提交方法
+
+- enctype: encoding type 编码方式 
+
+  默认：application/x-www-form-urlencoded 上传文件：multipart/form-data
+
+- target: 响应显示的位置
+
+-  novalidate: 不进行验证
+
+
+
+```html
+<form action="/login" method="post" enctype="application/x-www-form-urlencoded">
     <label for="usrName">用户名：</label>
     <input type="text" name="userName">
     
     <button type="submit"> 提交 </button>
     <button type="reset"> 重置 </button>
   </form>
-</body>
-</html>
-
 ```
 
+### 7.2 使用 body-parser 来解析响应体
 
+- 
 
