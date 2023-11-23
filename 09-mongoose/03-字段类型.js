@@ -14,7 +14,12 @@ mongoose.connection.once('open', () => {
   let BookSchema = new mongoose.Schema({
     name: String,
     author: String,
-    price: Number
+    price: Number,
+    is_hot: Boolean,
+    tags: Array,
+    pub_time: Date,
+    exId: mongoose.Schema.Types.ObjectId,
+    mix: mongoose.Schema.Types.Mixed
   })
 
   // 6. 创建模型对象， 对文档操作的封装对象
@@ -24,7 +29,12 @@ mongoose.connection.once('open', () => {
   BookModel.create({
     name: "Happy Day",
     author: "XM",
-    price: 123
+    price: 123,
+    is_hot: true,
+    tags: ['a', 'b', 'c'],
+    pub_time: new Date(),
+    mix: "123",
+    exId: new ObjectId('655d75e36b2eb8eb19b706f9\'')
   }).then(data => {
 
     // 7. 如果没有出错
